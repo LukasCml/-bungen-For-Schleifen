@@ -42,7 +42,7 @@
   }
   }*/
 
-int wert = 1;
+int z = 0;
 
 void setup()
 {
@@ -51,11 +51,11 @@ void setup()
 
 void loop()
 {
-  for (int i = 1; i < 15 && wert < 93 ; i = i + 1  )
+  for (int i = 1; i <= 92 ; i = i + z  )
   {
-    Serial.println(wert);
-    wert = wert + i;
+    Serial.println(i);
+    z++;
     delay(500);
   }
-  wert = 1;
+  z = 0;
 }
